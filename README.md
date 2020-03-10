@@ -55,9 +55,13 @@ Instructions:
 
   3. To see the instantaneous results and the results in the last 10 minutes, you have to open `chart.html` inside the `frontend` folder.
 
+Route:
+  - `GET` `/vote` To get number of vote of each candidate
+  - `POST` `/vote` To vote for a candidate
+
 Improvement:
   1. To test if a system can handle traffic spikes, I would recommend use the service of [load impact](https://loadimpact.com) (or called `k6`) for performance testing. It can simulate a big spike access to our system.
-  2. For CI/CD tool, I would choose [Jenkins](https://jenkins.io) to deploy our applications accross all hosting machines. It can also use with `load impact` to monitor the performance of the system by scheduling a regular stress test.
+  2. For CI/CD tool, I would choose [Jenkins](https://jenkins.io) to deploy our applications accross all hosting machines. It can also use with `k6` to monitor the performance of the system by scheduling a regular load stress test.
   3. To solve bottleneck of database, I would recommend using the database solution of `AWS` like `DynamoDB` or `Redshift`.
   4. To count number of vote of each kiosk, frontend should also pass its `kiosk_id` to backend for storage. In the application setup, I have taken consideration of this future change.
   5. To fully utilize the power of AWS backend service, I would recommend to use a serverless infrastructure which may include `Lambda`, `Api Gateway` to handle access spike.
