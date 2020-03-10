@@ -11,14 +11,14 @@ api = Api(app)
 CORS(app)
 
 # app.config['MYSQL_HOST'] = '10.0.3.129'
-app.config['MYSQL_HOST'] = 'hk01mysql'
+app.config['MYSQL_HOST'] = 'testmysql'
 # app.config['MYSQL_PORT'] = '8082'
 # app.config['MYSQL_USER'] = 'list'
 app.config['MYSQL_USER'] = 'user'
 # app.config['MYSQL_PASSWORD'] = 'df786eda0fe24f7f4e553d427c17ad67'
 app.config['MYSQL_PASSWORD'] = 'password'
 # app.config['MYSQL_DB'] = 'test'
-app.config['MYSQL_DB'] = 'hk01'
+app.config['MYSQL_DB'] = 'test'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 mysql = MySQL(app)

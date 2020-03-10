@@ -51,7 +51,7 @@ Instructions:
 ```bash
   docker-compose up
 ```
-  2. After the docker environment is set up, you have to manually login to mysql(`user=user password=password database=hk01 port=3306 host=127.0.0.1`) to set up database schema. For schema and seed data you can find it inside the `question3/backend/migrate/data.sql`.
+  2. After the docker environment is set up, you have to manually login to mysql(`user=user password=password database=test port=3306 host=127.0.0.1`) to set up database schema. For schema and seed data you can find it inside the `question3/backend/migrate/data.sql`.
 
   3. To open the frontend and vote, you have to open `index.html` inside the `frontend` folder. To vote for your favorite candidate, you have to click the radio button in front of the name of candidate and click `submit` button.
 
