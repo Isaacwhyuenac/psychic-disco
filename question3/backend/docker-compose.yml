@@ -21,7 +21,7 @@ services:
     container_name: voting_backend
     ports:
       - "5000:5000"
-      # - "3306:3306"
+
     networks:
       - app-tier
 
