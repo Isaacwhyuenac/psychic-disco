@@ -1,5 +1,3 @@
-CREATE DATABASE IF NOT EXISTS vote;
-
 CREATE TABLE IF NOT EXISTS `vote` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `vote` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
