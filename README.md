@@ -44,7 +44,6 @@ Running Environment:
 
 Prerequisite:
   - docker
-  -
 
 Instructions:
   1. The answers to this question are inside `question3` folder. To create your own backend environment, cd into `backend` folder and run the following command
@@ -52,14 +51,14 @@ Instructions:
 ```bash
   docker-compose up
 ```
-  2. After the docker environment is set up, you have to manually login to mysql(`user=user password=password database=hk01`) to set up database schema. For schema and seed data you can find it inside the `question3/backend/migrate/data.sql`.
+  2. After the docker environment is set up, you have to manually login to mysql(`user=user password=password database=hk01 port=3306 host=127.0.0.1`) to set up database schema. For schema and seed data you can find it inside the `question3/backend/migrate/data.sql`.
 
   3. To open the frontend and vote, you have to open `index.html` inside the `frontend` folder. To vote for your favorite candidate, you have to click the radio button in front of the name of candidate and click `submit` button.
 
   4. To see the instantaneous results and the results in the last 10 minutes, you have to open `chart.html` inside the `frontend` folder.
 
 Route:
-  - `GET` `/vote` To get number of vote of each candidate
+  - `GET`  `/vote` To get number of vote of each candidate
   - `POST` `/vote` To vote for a candidate
 
 Improvement:
